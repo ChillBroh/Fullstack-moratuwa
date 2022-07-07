@@ -1,0 +1,11 @@
+                    -block elements -  
+1.large building blox of the web page
+2.when displayed browser automatically add new line after the block element
+
+ex - > div,form,h1 to h6, p,ol,li,ul,table
+
+                    -Inline elements - 
+1.use to mark part of the elelment
+2.width of the inline element is the size of the content
+
+ex-> a,em,img,input,lable,span,strong
