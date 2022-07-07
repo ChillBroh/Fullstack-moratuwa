@@ -27,7 +27,7 @@ table{
 }
 th,td{
     text-align: left;
-    padding: 16px;
+    padding:  16px;
 }
 
 footer{
@@ -37,9 +37,9 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     padding: 3px;
     position: fixed;
-    bottom: 0;
+    bottom:  0;
     left: 0;
-    width: 100%;
+    width:  100%;
     
 }
 
