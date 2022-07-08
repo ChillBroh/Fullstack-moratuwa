@@ -1,0 +1,38 @@
+img{
+    display: block;
+    border: 3px solid yellow;
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+h1{
+    text-align: center;
+}
+video{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.animation{
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.animation:hover{
+    transform:scale(2,2);
+    transform: rotate(25deg);
+    transform: translate(200px);
+    transform: skew(75deg,50deg);
+    
+}
