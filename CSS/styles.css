@@ -12,6 +12,38 @@ body{
     background-image: url(../web/Images/istockphoto-1178390169-170667a.jpg);
     background-repeat: repeat-y;
     background-attachment: fixed;
-    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+   
+}
+a{
+    text-decoration: none;
+  
+  
+}
+li{
+    display: inline;
+ 
+}
+a:hover{
+   color: yellow;
+    font-size: 30px;
+    
+}
+
+li a{
+    padding: 30px;
+    color: white;
+}
+head{
+    position: fixed;
+}
+
