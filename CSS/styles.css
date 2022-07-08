@@ -1,0 +1,17 @@
+p{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10%;
+    margin: 100px;
+    color: red;
+    background-color: yellow;
+    
+}
+body{
+    background-image: url(../web/Images/istockphoto-1178390169-170667a.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: right;
+    
+}
