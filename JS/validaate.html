@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="post"
+      name="myform"
+      onsubmit="return validateForm()"
+    >
+      <label for="fname">Enter your first name</label>
+      <input type="text" id="fname" name="fname" />
+      <br /><br />
+      <label for="lname">Enter your last name</label>
+      <input type="text" id="lname" name="lname" />
+      <br /><br />
+      <input type="submit" value="Click Me" name="btn" onclick="welcome()" />
+    </form>
+
+    <script>
+      function validateForm() {
+        let x = document.forms["myform"]["fname"].value;
+        let y = document.forms["myform"]["lname"].value;
+
+        if (x == "" || y == "") {
+          if (x == "") {
+            alert("fname is empty");
+            return false;
+          } else if (y == "") {
+            alert("lname is empty");
+            return false;
+          }
+        }
+      }
+      function welcome() {
+        let fname = document.getElementById("fname").value;
+        let lname = document.getElementById("lname").value;
+
+        confirm("Welcome " + fname + " " + lname + "!");
+      }
+    </script>
+  </body>
+</html>

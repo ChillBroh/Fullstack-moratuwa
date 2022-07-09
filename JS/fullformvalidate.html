@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full form</title>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center">Vacation Vote Form</h1>
+        <form name="VacayForm" action="mailto:you@domain.com" onsubmit="return Validate1()" method="post">
+          <p>Name:<input type="text" name="name" size="25"></p><br>
+          <p>Do You Prefer an international destination?</p>
+          <p>Domestic<input type="radio" name="domint" value="domestic"></p>
+          <p>International<input type="radio" name="domint" value="international"></ <br>
+            <p>Where would you like to go?</p>
+            <select type="text" name="continent" value="select" size="1">
+              <option value="domestic">Domestic</option>
+              <option value="europe">Europe</option>
+              <option value="camerica">Central America</option>
+              <option value="asia">Asia</option>
+              <option value="aus">Australia</option>
+            </select>
+            <br>
+            <p>Check the box to act as your digital signature to cast your vote<input type="checkbox" value="agree" name="sig">
+              <input type="submit" value="Send" name="submit" onclick="if(!this.form.sig.checked){alert('You must agree to cast your vote by checking the box.');
+          return false}">
+              <input type="reset" value="Reset" name="reset">
+        </form>
+      </section>
+      <script>
+        function Validate1() {
+            var nam = document.forms["VacayForm"]["name"];
+            var dom = document.forms["VacayForm"]["domestic"];
+            var int = document.forms["VacayForm"]["international"];
+            var sel = document.forms["VacayForm"]["select"];
+            var agree = document.forms["VacayForm"]["agree"];
+          
+   
+            if (nam.value == "") {
+              alert("Please provide your name!");
+             
+              return false;
+            }
+          
+            if (domestic.value == "")
+            {
+               window.alert("Please select domestic preference to proceed.");
+               
+               return false;
+            }
+            else if(international.value == "") {
+              window.alert("Please select international preference to proceed.");
+             
+              return false;
+            }
+          
+            if (select.selectedIndex < 1) {
+              alert("Please select where you prefer to visit");
+              
+              return false;
+            }
+          
+            return true;
+          }
+      </script>
+</body>
+</html>
