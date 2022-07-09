@@ -1,0 +1,72 @@
+<!-- We use pesudo elements to style specific part of a html elemnt -->
+<!-- Selector::pseudo element ex--- p::first-letter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo elements</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h1::before {
+        content: "";
+        background-image: url(../web/Images/vintage-tattoo-monochrome-concept_225004-1409.webp);
+        background-size: cover;
+        display: inline-block;
+        height: 80px;
+        width: 100px;
+      }
+      h1::after {
+        content: "";
+        background-image: url(../web/Images/vintage-tattoo-monochrome-concept_225004-1409.webp);
+        background-size: cover;
+        display: inline-block;
+        height: 80px;
+        width: 100px;
+      }
+      p {
+        margin: 44px;
+      }
+      p::first-letter {
+        color: violet;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      span {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>First Paragraph</h1>
+
+    <p>
+      L<span>
+        orem ipsum, dolor sit amet consectetur adipisicing elit. Quasi tempore
+        omnis sit alias molestias exercitationem, reiciendis in distinctio
+        repudiandae laboriosam, debitis dolorum quos maiores ducimus quaerat
+        eius
+      </span>
+      maxime facere officiis? Provident rerum nemo dolore nulla possimus, id
+      harum hic deleniti impedit repellendus tempore exercitationem molestiae
+      mollitia quasi atque ab saepe. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Blanditiis porro nulla, doloremque magni excepturi dolor
+      consequuntur, earum modi quae, incidunt distinctio laudantium! Placeat nam
+      eligendi sequi impedit reprehenderit, quae facere porro neque
+      exercitationem repellat error, amet unde? Quam inventore facilis explicabo
+      ea molestiae. Dolore magnam magni quibusdam. Reprehenderit commodi
+      perferendis officiis fuga, rerum dolore! Alias harum, quae molestiae
+      dignissimos nisi animi iure commodi repellat, quisquam veniam vero natus
+      et iste ad neque quaerat doloremque incidunt temporibus! Fugiat debitis
+      amet impedit sit tempora inventore cumque rem consequatur optio. Dolores
+      accusamus amet qui? Quis doloremque aperiam nostrum odit commodi quos
+      voluptatibus consequatur.
+    </p>
+  </body>
+</html>
