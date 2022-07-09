@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event handle JS</title>
+    <style>
+      #btn {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Event handle</h1>
+    <form action="#" method="post">
+      <label for="fname">Enter Your name</label>
+      <input type="text" id="name" required />
+      <br />
+      <br />
+      <input
+        type="submit"
+        value="Send Your Name"
+        onclick="text()"
+        id="btn"
+        onmouseover="color()"
+      />
+    </form>
+
+    <script>
+      function text() {
+        let name = document.getElementById("name").value;
+        document.write("Hello my dear " + name);
+      }
+      function color() {
+        document.getElementById("btn").style.color = "yellow";
+        document.getElementById("btn").style.padding = "15px";
+      }
+    </script>
+  </body>
+</html>
