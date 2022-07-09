@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 10px 40px;
+        font-size: 19px;
+        color: #333;
+      }
+      .box {
+        padding-left: 20px;
+        width: 280px;
+        margin-right: 20px;
+        float: left;
+
+        border-right: 1px solid #333;
+      }
+      button {
+        margin-bottom: 10px;
+        padding: 6px;
+        border: 1px solid #999;
+        cursor: pointer;
+      }
+      p {
+        margin-bottom: 10px;
+        display: block;
+        clear: both;
+      }
+      input {
+        width: 50px;
+        margin-right: 10px;
+        padding: 5px 8px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h4>Try, Catch and Throw</h4>
+      <p>Please input a number between 5 and 10:</p>
+
+      <input type="text" id="get-value" value="" />
+      <button onclick="getValue()">Get Valu of Input</button>
+      <p id="error-message"></p>
+    </div>
+    <script>
+      var messages, number;
+
+      /*********************************
+  try / catch code test
+*********************************/
+      function getValue() {
+        messages = document.getElementById("error-message");
+        messages.innerHTML = "";
+        messages.style.color = "red";
+
+        number = document.getElementById("get-value").value;
+
+        try {
+          if (number == "") throw "is Empty";
+          if (isNaN(number)) throw "is not a number";
+          if (number > 10) throw "is too Big";
+          if (number < 5) throw "is too Small";
+
+          debugger;
+
+          if (number == number) {
+            messages.style.color = "green";
+            throw "is " + number;
+          }
+        } catch (err) {
+          messages.innerHTML = "Input " + err;
+        }
+      }
+    </script>
+  </body>
+</html>
