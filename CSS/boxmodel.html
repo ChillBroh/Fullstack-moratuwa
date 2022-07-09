@@ -1,0 +1,34 @@
+<!-- Every html element can consider as a box -->
+<!-- padding -  add some space inside the box. between text and box border -->
+<!-- Border - out side of the box.  -->
+<!-- margine - outside the border, margin olways overlapped. only the highest margin will visible -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box1 {
+        background-color: yellow;
+        padding: 20px;
+        border: 20px solid black;
+        margin: 5px;
+      }
+      .box2 {
+        background-color: pink;
+        padding: 30px;
+        border: 20px solid red;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="box1">This is my first box</p>
+    <p class="box2">This is my second box</p>
+  </body>
+</html>
