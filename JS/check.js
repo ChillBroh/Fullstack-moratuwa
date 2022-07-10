@@ -17,7 +17,7 @@ function getValue() {
     if (number > 10) throw "is too Big";
     if (number < 5) throw "is too Small";
 
-    debugger;
+  
 
     if (number == number) {
       messages.style.color = "green";
