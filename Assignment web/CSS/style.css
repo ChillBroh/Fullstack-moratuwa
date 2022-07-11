@@ -1,8 +1,14 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+}
+.responsive {
     width: 100%;
     height: auto;
-    margin: 0;
-}
+  }
 header{
     background-color: black;
 }
@@ -89,5 +95,77 @@ span{
     padding: 10px;
     background-color: red;
 }
+
+
+.footer{
+    background-color: black;
+    height: 200px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    height: 180px;
+    width: 300px;
+    margin: 5px 30px 5px 30px;
+}
+#col1>img{
+    height: 150px;
+    width: 150px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+#col1>p{
+    color: gold;
+    font-size: 0.6cm;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace
+}
+#col2>p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 20px 0 0 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#col2>.copyright{
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    font-size: x-small;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#col3>img{
+    height: 170px;
+    width: auto;
+    padding: 25px;
+    margin-left: 20px;
+}
+.col3{
+    height: 180px;
+    width: 200px;
+    margin: 5px 20px 5px 10px;
+}
+#col4>img{
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+}
+#subbtn{
+    margin-left: 10px;
+    background-color:gold;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+#subbtn:hover{
+    background-color: red;
+}
+
+
 
 
