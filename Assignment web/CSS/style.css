@@ -26,7 +26,7 @@ ul{
     margin-top: 19px;
     
 }
-a{
+li>a{
     text-decoration: none;
     color: white; 
     padding: 20px;  
@@ -70,6 +70,7 @@ padding: 20px;
     transform: translateY(-15px);
     transition: .4s all ease-in;
 }
+
 .welcome>h1{
   text-align: center;
   font-size:3cm;
@@ -105,6 +106,15 @@ span{
     padding: 10px;
     background-color: red;
 }
+.g1-details>button:hover{
+    background-color: black;
+    
+}
+.g1-details>button>a{
+    color: white;
+    text-decoration: none;
+}
+
 
 
 .footer{
@@ -182,6 +192,16 @@ span{
 #col5>p{
     color: white;
     text-align: center;
+}
+.social-bar>a>img{
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+.social-bar>a{
+    padding: 16px;
+    text-decoration: none;
 }
 
 
