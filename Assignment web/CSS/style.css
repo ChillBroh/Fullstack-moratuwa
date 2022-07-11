@@ -40,6 +40,11 @@ li{
 padding: 20px;
     font-size: 0.5cm;
     font-family: 'Courier New', Courier, monospace;
+    
+}
+.navbar>ul>li:hover{
+    transform: translateY(-10px);
+    transition: .2s all ease-in;
 }
 .navbar>.logo>img{
     display: inline-flex;
@@ -52,6 +57,7 @@ padding: 20px;
     
 
 }
+
 .navbar>.greet>h1{
     margin: 0;
     display: inline-flex;
@@ -59,6 +65,10 @@ padding: 20px;
     padding: 10px;
     margin-top: 21px;
     margin-left: 30px;
+}
+.welcome>h1:hover{
+    transform: translateY(-15px);
+    transition: .4s all ease-in;
 }
 .welcome>h1{
   text-align: center;
@@ -118,6 +128,10 @@ span{
     width: 150px;
     margin-left: 80px;
     margin-right: 50px;
+    
+}
+#col1>img:hover{
+    transform: translateY(-10px);
 }
 #col1>p{
     color: gold;
@@ -165,9 +179,9 @@ span{
 #subbtn:hover{
     background-color: red;
 }
-.col5{
-    margin-top: 100px;
-    margin-left: 100px;
+#col5>p{
+    color: white;
+    text-align: center;
 }
 
 
