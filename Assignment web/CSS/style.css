@@ -16,7 +16,9 @@ header{
 ul{
     display: inline-flex;
     float: right;
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-top: 19px;
+    
 }
 a{
     text-decoration: none;
@@ -30,15 +32,16 @@ a:hover{
 li{
     display: inline;
 padding: 20px;
-    font-size: xx-large;
+    font-size: 0.5cm;
     font-family: 'Courier New', Courier, monospace;
 }
 .navbar>.logo>img{
     display: inline-flex;
     border-radius: 50px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-left: 81px;
+    padding: 10px;
    
     
 
@@ -56,4 +59,35 @@ padding: 20px;
   font-size:3cm;
   color: #805c00;
 }
+.g1,.g1-img{
+    display: inline-flex;
+    margin-top: 30px;
+}
+.g1-img>img{
+    display: inline-flex;
+    width: 644px;
+    height: auto;
+    margin-left: 100px;
+    
+}
+.g1-details>h3{
+    margin-left: 60px;
+    font-size: 0.6cm;
+    margin-right: 60px;
+   
+}
+span{
+    margin-left: 60px;
+    color: black;
+    font-size: 1cm;
+  
+}
+.g1-details>button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: red;
+}
+
 
