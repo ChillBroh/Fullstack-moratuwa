@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+header{
+    background-color: black;
+}
+.navbar{
+    display: inline-flex;
+    margin: 0;
+    top: 0;
+    padding: 0px;
+   
+}
+ul{
+    display: inline-flex;
+    float: right;
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    color: white; 
+    padding: 20px;  
+}
+a:hover{
+    color: grey;
+    
+}
+li{
+    display: inline;
+padding: 20px;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar>.logo>img{
+    display: inline-flex;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin-left: 81px;
+   
+    
+
+}
+.navbar>.greet>h1{
+    margin: 0;
+    display: inline-flex;
+    color: white;
+    padding: 10px;
+    margin-top: 21px;
+    margin-left: 30px;
+}
+.welcome>h1{
+  text-align: center;
+  font-size:3cm;
+  color: #805c00;
+}
+

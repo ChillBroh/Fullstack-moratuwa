@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To test</title>
+  </head>
+  <body>
+    <h1>Enter a Number between 10 and 20</h1>
+    <input type="text" id="value" required />
+    <input type="submit" value="Submit" id="subbtn" onclick="chek()" />
+    <p id="para"></p>
+    <script>
+      function chek() {
+        let message = document.getElementById("para");
+        message.innerHTML = "";
+        message.style.color = "red";
+
+        let num = document.getElementById("value").value;
+
+        try {
+          if (num == "") throw "is Empty ";
+          if (isNaN(num)) throw "is Not a number";
+          if (num > 20) throw "is too high";
+          if (num < 10) throw "is too low";
+
+          if (num == num) {
+            message.style.color = "green";
+            throw "is " + num;
+          }
+        } catch (er) {
+          message.innerHTML = "Input " + er;
+        }
+      }
+    </script>
+  </body>
+</html>
