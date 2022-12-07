@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>Button will dissapear when clicked</p>
+    <button id="single">Click Me</button>
+
+    <p>Button will dissapear when double clicked</p>
+    <button id="double">Click Me</button>
+
+    <p>Button will change collor when hovered</p>
+    <button id="hover">Hover</button>
+
+    <p>Button will change color when cursor reach and leave</p>
+    <button id="reach">enter</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#single").click(function () {
+          $(this).hide();
+        });
+
+        $("#double").dblclick(function () {
+          $(this).hide();
+        });
+
+        $("#hover").hover(function () {
+          $(this).css("background-color", "pink");
+        });
+
+        $("#reach").on({
+          mouseenter: function () {
+            $(this).css("background-color", "blue");
+            $(this).html("Leave Me alone").css("color", "white");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "red");
+            $(this).html("Hey come here");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
