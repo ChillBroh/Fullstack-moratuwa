@@ -10,6 +10,10 @@
 
     <!--validation library-->
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <!--link JS file-->
+    <script src="./JS/formvalidation.js"></script>
+
     <!--Internal CSS-->
     <style>
       body {
@@ -30,12 +34,17 @@
   </head>
   <body>
     <div class="form">
-      <form action="#" method="post">
+      <form action="#" method="post" name="registration">
         <fieldset>
           <legend>Registration Form</legend>
           <br />
           <label for="name">Enter Your name</label><br />
-          <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Name"
+          /><br /><br />
           <label for="email">Enter your Email</label><br />
           <input
             type="text"
