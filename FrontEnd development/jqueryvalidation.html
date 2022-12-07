@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--validation library-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <!--Internal CSS-->
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .form {
+        display: inline-block;
+        text-align: left;
+        font-weight: bold;
+        background-color: cyan;
+      }
+      .subbtn {
+        text-align: center;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Registration Form</legend>
+          <br />
+          <label for="name">Enter Your name</label><br />
+          <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+          <label for="email">Enter your Email</label><br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+          /><br /><br />
+          <label for="pass">Enter Your Password</label><br />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Enter Password"
+          /><br /><br />
+          <label for="cpass">Confirm Password</label><br />
+          <input type="password" name="cpass" id="cpass" /><br /><br />
+          <div class="subbtn">
+            <input
+              type="submit"
+              value="Register"
+              style="background-color: orange; border: none"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
