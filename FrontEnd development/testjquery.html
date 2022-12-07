@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p id="pid">this is a sample paragraph</p>
+
+    <script>
+      $(document).ready(function () {
+        $("#pid").click(function () {
+          alert("This is from jquery");
+        });
+      });
+      document.getElementById("pid").onclick = function () {
+        alert("This is from javascript");
+      };
+    </script>
+  </body>
+</html>
