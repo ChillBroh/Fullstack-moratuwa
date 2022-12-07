@@ -10,6 +10,10 @@
   <body>
     <p id="pid">this is a sample paragraph</p>
 
+    <p class="pid">This is sample paragraph class</p>
+    <br />
+    <button class="btn">Hide</button>
+
     <script>
       $(document).ready(function () {
         $("#pid").click(function () {
@@ -19,6 +23,9 @@
       document.getElementById("pid").onclick = function () {
         alert("This is from javascript");
       };
+      $(".btn").click(function () {
+        $(".pid").hide();
+      });
     </script>
   </body>
 </html>
