@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      p {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="hide">Hide</button>
+    <button class="show">show</button>
+    <button class="toggle">Toggle</button>
+    <br />
+
+    <p id="first">This will appear or dissapear fast</p>
+    <p id="second">This will appear or dissapear slowly</p>
+    <p id="third">This will appear or dissapear 500ms speed</p>
+
+    <script>
+      $(document).ready(function () {
+        $(".hide").hover(function () {
+          $("#first").hide("fast");
+          $("#second").hide("slow");
+          $("#third").hide(500);
+        });
+
+        $(".show").hover(function () {
+          $("#first").show("fast");
+          $("#second").show("slow");
+          $("#third").show(500);
+        });
+
+        $(".toggle").hover(function () {
+          $("#first").toggle("fast");
+          $("#second").toggle("slow");
+          $("#third").toggle(500);
+        });
+      });
+    </script>
+  </body>
+</html>
